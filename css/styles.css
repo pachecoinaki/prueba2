@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin:0  auto;
+    padding:0;
+    background-size:cover;
+    justify-content: center;
+    background: repeating-linear-gradient(
+        to right,
+        #3a5f0b 0,
+        #3a5f0b 60px,
+        #4d7c0f 60px,
+        #4d7c0f 120px
+    );
+background-size: cover;
+
+
+}
+
+header {
+  background: linear-gradient(black, rgb(92, 90, 90), rgb(139, 138, 138));
+  height: 75px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around
+;
+  align-items: center;
+  height: 100%;
+
+width: 100%;
+
+}
+nav.Section{
+  justify-content: center;
+}
+
+
+h1{
+
+    font-size: 33px;
+    color:white;
+ 
+
+}
+
+.Sections {
+  list-style: none;
+  display: flex;
+ 
+  
+}
+.li a {
+    font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+   padding:20px;
+}
+
+.Sections .li a:hover {
+  color: #ccc;
+}
+
+
+.Arcile-1{
+  margin-top:50px;
+}
+h2{
+    color:white;
+    font-size: 60px;
+}
+.article-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.explicacion-lorem-botines{
+    justify-content: center;
+    width: 60%;
+}
+#H2-2{
+    font-size:40px;
+}
+.Lorem{
+    font-size:20px;
+    color:white;
+}
+
+/*carrusel de imagenes*/
+.carrusel-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+
+.carrusel-container {
+  position: relative;
+  width: 80vw;
+  height: 45vw;
+  max-width: 800px;/*con esto controlamos el ancho del carrusel*/
+  max-height: 445px;  /*con esto controlamos el alto de las imagenes* del carrusel*/
+  overflow: hidden;
+
+  border-radius: 10px;
+  
+}
+
+.Carrusel {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.visible {
+  opacity: 1;
+}
+
+.img-carrusel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+.explicacion-lorem-botines{
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+}
+/*footer*/
+.foot{
+    margin-top:120px;
+    background: linear-gradient(to right, #2e7d32, #1b5e20, #0d3c0c);
+    height: auto;
+    width: 100%;
+}
+.foot-content-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;/*espaciado elemntos footer*/
+}
+
+.foot h3{
+    color:white;
+    font-size:60px;
+}
+.foot p{
+    font-size: 30px;
+    color:white;
+}
+.balon{
+    font-size: 300px;
+}
+.foot h4{
+    color:white;
+    font-size:35px;
+    margin-bottom: 20px;
+}
+.Enla-block{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+    list-style: none;
+
+}
+.li-foot{
+    cursor: pointer;
+    font-size:25px;
+    transition: transform 0.3s;
+}
+.li-foot a{
+    color:white;
+    text-decoration: none;
+}
+.li-foot:hover{
+    transform: scale(1.1);
+}
+#Redes{
+display: grid;
+grid-template-rows: repeat(2, 1fr); /* Dos filas de igual altura */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+ margin-top: 50px;
+  align-items: flex-start;
+gap: 2px ; /*primer gap para distancia vertical y el segundo para horizontal*/
+justify-content: center;
+text-align: center;
+
+}
+
+.img-footer-img{
+  width:100px;
+  height:100px;
+  cursor:pointer;
+  transition:transform 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.img-footer-img:hover{
+  transform: scale(1.1);
+}
+.facebook-block{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    text-align: center;
+}
+.insta-block{
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    text-align: center;
+}
+.Wtsp-block{
+     display: flex;
+    flex-direction: column;
+align-items: center!important;
+
+    text-align: center;
+}
+.fila-nueva{
+     display: flex;
+    flex-direction: column;
+align-items: center;
+
+    text-align: center;
+}
+.Parrafo{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size:15px;
+  cursor: pointer;
+  transition:transform 0.3s;
+  margin-top: 10px;
+  
+}
+.Parrafo:hover{
+  transform:scale(1.1);
+}
+#facebook-parrafo {
+  background: linear-gradient(45deg, #3b5998, #4c70ba, #5b86e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+
+#instagram-parrafo {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+#watsapp-parrafo {
+  position: relative;
+  left:-10px;
+  background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+#gamil-parrafo {
+  background: linear-gradient(90deg, #D93025, #F9AB00, #34A853, #4285F4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+
+}
+/*a partir de aka es el formulario de contacto en el footer*/
+#formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  margin-top: 30px;
+background: radial-gradient(black,rgb(59, 59, 59),rgb(17, 17, 17));
+  border-radius: 10px;
+  width: 80%;
+  max-width: 1000px;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+#formulario-contacto h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  outline: none;
+  border-color: #d48cb3; /* opcional: cambia el borde para mayor visibilidad */
+}
+
+#formulario-contacto button {
+  background-color: #ffffff;
+  color: rgb(49, 49, 49);
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  transition: transform 0.3s;
+}
+
+#formulario-contacto button:hover {
+  background-color:aqua;
+  transform: scale(1.1);
+}
+/*fin del css del footer*/
+@media (max-width:395px){
+    .foot h3{
+        font-size: 50px;
+    }
+}
+@media (min-width: 360px) and (max-width: 379px){
+     .Nav-high-content{
+        gap:10px;
+    }
+     .li a{
+        font-size: 11px;
+    }
+    h1{
+      font-size: 13px;
+    }
+    .img-nav{
+        height: 13px;
+        width: 13px;
+    }
+    .Arcile-1 h2{
+          margin-top: 65px;
+    font-size: 30px;
+ }
+ .explicacion-lorem-botines{
+
+    width: 90% ;
+}
+#H2-2{
+    font-size:30px;
+}
+.Lorem{
+    font-size: 15px;;
+    color:white ;
+}
+}
+@media (min-width: 380px) and (max-width: 429px){
+
+    .Nav-high-content{
+        gap:15px;
+    }
+     .li a{
+        font-size: 12px;
+    }
+    h1{
+      font-size: 15px;
+    }
+    .img-nav{
+        height: 13px;
+        width: 13px;
+    }
+    .Arcile-1 h2{
+    font-size: 34px;
+     margin-top: 65px;
+ }
+.explicacion-lorem-botines{
+
+    width: 90% ;
+}
+#H2-2{
+    font-size:35px ;
+}
+.Lorem{
+    font-size: 17px;
+    color:white ;
+}
+}
+@media (min-width: 430px) and (max-width: 499px){
+     .li a{
+        font-size: 12px;
+    }
+    h1{
+      font-size: 15px;
+    }
+    .img-nav{
+        height: 13px;
+        width: 13px;
+    }
+    .Arcile-1 h2{
+    font-size: 35px;
+     margin-top: 60px;
+ }
+ .explicacion-lorem-botines{
+
+    width: 90%;
+}
+ 
+}
+@media (min-width: 500px) and (max-width: 566px){
+    .li a{
+        font-size: 13px;
+    }
+    h1{
+      font-size: 21px;
+    }
+    .img-nav{
+        height: 18px;
+        width: 18px;
+    }
+    .Arcile-1 h2{
+    font-size: 37px;
+     margin-top: 40px;
+ }
+ .explicacion-lorem-botines{
+
+    width: 90% ;
+}
+}
+   @media (min-width: 567px) and (max-width: 605px) {
+  .Nav-high-content {
+    gap: 15px;
+  }
+  .li a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .img-nav {
+    height: 19px;
+    width: 19px;
+     margin-top: 40px;
+  }
+.explicacion-lorem-botines{
+
+    width: 90% ;
+}
+}
+@media (min-width: 606px) and (max-width: 698px){
+.Nav-high-content {
+    gap: 55px;
+  }
+  .li a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  .img-nav {
+    height: 19px;
+    width: 19px;
+  }
+ .Arcile-1 h2{
+    font-size: 45px;
+ }
+ .explicacion-lorem-botines{
+
+    width: 90% ;
+}
+}
+@media (min-width: 698px) and (max-width: 802px){
+    .Nav-high-content {
+    gap: 55px;
+  }
+  .li a {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .img-nav {
+    height: 22px;
+    width: 22px;
+  }
+}
